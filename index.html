@@ -1,33 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Form</title>
-    <!-- Add Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intern Team Portfolio</title>
+
+  <!-- Link External CSS File -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
-    <form class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md">
-        <div class="mb-4">
-            <label for="name" class="block text-gray-700 font-medium mb-2">Name:</label>
-            <input type="text" id="name" name="name" required 
-                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <div class="logo-badge"><span>IN</span></div>
+      <h1>Intern Collective</h1>
+      <p class="subtitle">Five interns. One vision. We build with speed and creativity.</p>
+    </header>
+
+    <!-- TEAM GRID -->
+    <section class="team-grid">
+
+               <div>
+            <div class="name">Abhay Kumar</div>
+            <div class="role">Product Engineer Intern</div>
+            <div class="tags">
+              <span class="tag">UI</span>
+              <span class="tag">Systems</span>
+              <span class="tag">Perf</span>
+            </div>
+          </div>
         </div>
-        <div class="mb-4">
-            <label for="email" class="block text-gray-700 font-medium mb-2">Email:</label>
-            <input type="email" id="email" name="email" required 
-                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <p class="bio">Turns coffee into clean UI & smooth workflows.</p>
+        <div class="links">
+          <a class="icon-btn" href="#"><img src="icons/github.svg" class="icon"></a>
+          <a class="icon-btn" href="#"><img src="icons/linkedin.svg" class=" class="top">
+          <img src="images/member2.jpg" class="avatar">
+          <div>
+            <div class="name">Priya Sharma</div>
+            <div class="role">Frontend Intern</div>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">Animations</span>
+              <span class="tag">UX</span>
+            </div>
+div>
+        <p class="bio">Crafts delightful interactions and responsive layouts.</p>
+        <div class="links">
+          #icons/github.svg</a>
+          #icons/linkedin.svg</a>
         </div>
-        <div class="mb-6">
-            <label for="message" class="block text-gray-700 font-medium mb-2">Message:</label>
-            <textarea id="message" name="message" rows="4" required 
-                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </article>
+
+      <!-- MEMBER 3 -->
+      <article class="card">
+        <div class="top">
+          images/member3.jpg
+          <div>
+            <div class="name">Ravi Verma</div>
+            <div class="role">Backend Intern</div>
+            <div class="tags">
+              <span class="tag">Node</span>
+              <span class="tag">APIs</span>
+              <span class="tag">Security</span>
+            </div>
+          </div>
         </div>
-        <button type="submit" 
-                class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-            Submit
-        </button>
-    </form>
+        <p class="bio">Builds fast, scalable APIs with clean architecture.</p>
+        <div class="links">
+          #icons/github.svg</a>
+          #icons/linkedin.svg</a>
+        </div>
+      </article>
+
+      <!-- MEMBER 4 -->
+      <article class="card">
+        <div class="top">
+          <img src="images/member4.jpg" class="avatar">
+          <div>
+            <div class="name">Aisha Khan</div>
+            <div class="role">Design Intern</div>
+            <div class="tags">
+              <span class="tag">Figma</span>
+              <span class="tag">Branding</span>
+              <span class="tag">UX</span>
+            </div>
+          </div>
+        </div>
+        <p class="bio">Designs modern and meaningful digital experiences.</p>
+        <div classdribbble.svg</a>
+          #icons/linkedin.svg</a>
+        </div>
+      </article>
+
+      <!-- MEMBER 5 -->
+      <article class="card">
+        <div class="top">
+          images/member5.jpg
+          <div>
+            <div class="name">Arjun Mehta</div>
+            <div class="role">Data Intern</div>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">ML</span>
+              <span class="tag">Analytics</span>
+            </div>
+          </div>
+        </div>
+        <p class="bio">Turns raw data into actionable insights.</p>
+        <div class="links">
+          #icons/github.svg</a>
+          #icons/linkedin.svg</a>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      © 2026 Intern Collective — Built with ❤️ using HTML & CSS
+    </footer>
+
+  </div>
 </body>
 </html>
