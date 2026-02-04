@@ -1,66 +1,143 @@
-body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background: #f4f6fb;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	min-height: 100vh;
+:root{
+  --bg:#0b0f17;
+  --card: rgba(255,255,255,0.06);
+  --stroke: rgba(255,255,255,0.15);
+  --text:#e8eefc;
+  --muted:#a6b3d0;
+  --accent:#7c5cff;
+  --accent-2:#00e6a4;
+  --radius:16px;
 }
 
-.styled-form {
-	background: #fff;
-	padding: 2rem 2.5rem;
-	border-radius: 12px;
-	box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-	margin-top: 2rem;
-	width: 100%;
-	max-width: 400px;
+body{
+  margin:0;
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(800px circle at 20% -10%, rgba(124,92,255,.25), transparent),
+              radial-gradient(600px circle at 90% 10%, rgba(0,230,164,.15), transparent),
+              var(--bg);
+  color:var(--text);
 }
 
-.form-group {
-	margin-bottom: 1.5rem;
-	display: flex;
-	flex-direction: column;
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
 }
 
-label {
-	margin-bottom: 0.5rem;
-	font-weight: 500;
-	color: #333;
+/* HEADER */
+header{
+  text-align:center;
+  padding:50px 0;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-	padding: 0.75rem 1rem;
-	border: 1px solid #d1d5db;
-	border-radius: 6px;
-	font-size: 1rem;
-	background: #f9fafb;
-	transition: border 0.2s;
+.logo-badge{
+  width:70px; height:70px;
+  border-radius:20px;
+  background:linear-gradient(145deg, rgba(124,92,255,.35), rgba(0,230,164,.35));
+  display:flex; align-items:center; justify-content:center;
+  margin:auto;
+  font-weight:800;
+  font-size:24px;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-	border-color: #6366f1;
-	outline: none;
+h1{
+  margin:20px 0 10px;
+  font-size:42px;
 }
 
-button[type="submit"] {
-	background: #6366f1;
-	color: #fff;
-	border: none;
-	padding: 0.75rem 1.5rem;
-	border-radius: 6px;
-	font-size: 1rem;
-	font-weight: 600;
-	cursor: pointer;
-	transition: background 0.2s;
+.subtitle{
+  color:var(--muted);
 }
 
-button[type="submit"]:hover {
-	background: #4f46e5;
+/* TEAM GRID */
+.team-grid{
+  display:grid;
+  gap:20px;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card{
+  background:rgba(255,255,255,0.06);
+  border:1px solid var(--stroke);
+  border-radius:var(--radius);
+  padding:20px;
+  backdrop-filter: blur(6px);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  border-color:rgba(255,255,255,0.25);
+}
+
+.avatar{
+  width:70px; height:70px;
+  border-radius:14px;
+  object-fit:cover;
+  border:1px solid var(--stroke);
+}
+
+.top{
+  display:flex;
+  gap:15px;
+  margin-bottom:15px;
+}
+
+.name{
+  font-size:20px;
+  font-weight:700;
+}
+
+.role{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.tags{
+  margin-top:6px;
+  display:flex; gap:6px; flex-wrap:wrap;
+}
+
+.tag{
+  padding:4px 8px;
+  background:rgba(255,255,255,0.1);
+  border:1px solid var(--stroke);
+  font-size:12px;
+  border-radius:50px;
+}
+
+.bio{
+  color:#d2dcf6;
+  font-size:14px;
+  margin:10px 0 14px;
+}
+
+.links{
+  display:flex; gap:12px;
+}
+
+.icon-btn{
+  width:36px; height:36px;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:10px;
+  border:1px solid var(--stroke);
+  background:rgba(255,255,255,0.08);
+  transition:.25s;
+}
+
+.icon-btn:hover{
+  background:rgba(124,92,255,0.3);
+  border-color:var(--accent);
+}
+
+.icon{
+  width:18px; filter:invert(1);
+}
+
+/* FOOTER */
+footer{
+  margin-top:40px;
+  text-align:center;
+  color:var(--muted);
+  padding:20px 0;
 }
